@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    <html>
+        <head>
+                        <!-- animation -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+           <style>
+               body{
+                background-color: rgba(153,155,138,0.3);
+               }
+               .card__2 {
+                  width: 390px;
+                  height: 500px;
+                  transition: all 0.2s;
+                  position: relative;
+                  cursor: pointer;
+                }
+
+                .card__2-inner {
+                  width: inherit;
+                  height: inherit;
+                  background: rgba(255,255,255,.05);
+                  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+                  backdrop-filter: blur(10px);
+                  border-radius: 8px;
+                }
+
+                .card__2:hover {
+                  transform: scale(1.04) rotate(1deg);
+                }
+
+                .circle {
+                  width: 100px;
+                  height: 100px;
+                  background: radial-gradient(#724d51, #eb8b69);
+                  border-radius: 50%;
+                  position: absolute;
+                  animation: move-up6 2s ease-in infinite alternate-reverse;
+                }
+
+                .circle:nth-child(1) {
+                  top: -25px;
+                  left: -25px;
+                }
+
+                .circle:nth-child(2) {
+                  bottom: -25px;
+                  right: -25px;
+                  animation-name: move-down1;
+                }
+
+                @keyframes move-up6 {
+                  to {
+                    transform: translateY(-10px);
+                  }
+                }
+
+                @keyframes move-down1 {
+                  to {
+                    transform: translateY(10px);
+                  }
+                }
+           </style>
+        </head>
+        <body>
+    <!-- start menu section -->
+    <section  class="menu">
+        <div data-aos="fade-down" class="container p-5">
+            <h1 class="text-center">أسعار الألعاب</h1>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card__2">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="card__2-inner">
+                           <table>
+                              <tr>
+                                  <th colspan="3"> (شخص إلى ٣ أشخاص)</th>
+                                  <th></th>
+                                  <th colspan="1">السعر للشخص 15+   </th>
+                              </tr>
+                              <tr>
+                                  <td>ساعة</td>
+                                  <td></td>
+                                  <td>30 SR</td>
+                                  <td></td>
+                                  <td>1 Hour</td>
+                              </tr>
+                              <tr>
+                                  <td>ساعتن</td>
+                                  <td></td>
+                                  <td>40 SR</td>
+                                  <td></td>
+                                  <td>2 Hours</td>
+                              </tr>
+                              <tr>
+                                  <td>3 ساعات</td>
+                                  <td></td>
+                                  <td>50 SR</td>
+                                  <td></td>
+                                  <td>3 Hours</td>
+                              </tr>
+                              <tr>
+                                  <td>1 ساعة إضافية</td>
+                                  <td></td>
+                                  <td>30 SR</td>
+                                  <td></td>
+                                  <td>1 Extra Hour</td>
+                              </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card__2">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="card__2-inner">
+                           <table>
+                              <tr>
+                                  <th colspan="3"> (٤ أشخاص وأكثر)</th>
+                                  <th></th>
+                                  <th colspan="1">السعر للشخص 15+   </th>
+                              </tr>
+                              <tr>
+                                  <td>ساعة</td>
+                                  <td></td>
+                                  <td>25 SR</td>
+                                  <td></td>
+                                  <td>1 Hour</td>
+                              </tr>
+                              <tr>
+                                  <td>ساعتن</td>
+                                  <td></td>
+                                  <td>35 SR</td>
+                                  <td></td>
+                                  <td>2 Hours</td>
+                              </tr>
+                              <tr>
+                                  <td>3 ساعات</td>
+                                  <td></td>
+                                  <td>45 SR</td>
+                                  <td></td>
+                                  <td>3 Hours</td>
+                              </tr>
+                              <tr>
+                                  <td>1 ساعة إضافية</td>
+                                  <td></td>
+                                  <td>30 SR</td>
+                                  <td></td>
+                                  <td>1 Extra Hour</td>
+                              </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card__2">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="card__2-inner">
+                            <table>
+                              <tr>
+                                  <th colspan="3"> (شخص إلى ٣ أشخاص)</th>
+                                  <th></th>
+                                  <th colspan="1">السعر للطفل 7+   </th>
+                              </tr>
+                              <tr>
+                                  <td>ساعة</td>
+                                  <td></td>
+                                  <td>20 SR</td>
+                                  <td></td>
+                                  <td>1 Hour</td>
+                              </tr>
+                              <tr>
+                                  <td>1 ساعة إضافية</td>
+                                  <td></td>
+                                  <td>10 SR</td>
+                                  <td></td>
+                                  <td>1 Extra Hour</td>
+                              </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-down" class="fillter mt-5">
+            <h1 class="text-center">أسعار البار</h1>
+            <div class="container p-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card__2">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="card__2-inner">
+                            {% for category in Categories %}
+                                <table>
+                                    <tr class="mt-5">
+                                        <td>{{category.name_ar}}</td>
+                                            <td>CAL</td>
+                                            <td>SR</td>
+                                        <td>{{category.name_en}}</td>
+                                    </tr>
+                                    {% for item in category.categoryItem.all %}
+                                        <tr>
+                                            <td>{{item.name_ar}}</td>
+                                            <td>{{item.CAL}}</td>
+                                            <td>{{item.SR}}</td>
+                                            <td>{{item.name_en}}</td>
+                                        </tr>
+                                    {% endfor %}
+
+                                </table>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card__2">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="card__2-inner">
+                        {% for category in Categories %}
+                                <table>
+                                    <tr class="mt-5">
+                                        <td>{{category.name_ar}}</td>
+                                            <td>CAL</td>
+                                            <td>SR</td>
+                                        <td>{{category.name_en}}</td>
+                                    </tr>
+                                    {% for item in category.categoryItem.all %}
+                                        <tr>
+                                            <td>{{item.name_ar}}</td>
+                                            <td>{{item.CAL}}</td>
+                                            <td>{{item.SR}}</td>
+                                            <td>{{item.name_en}}</td>
+                                        </tr>
+                                    {% endfor %}
+
+                                </table>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card__2">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="card__2-inner">
+                            {% for category in Categories %}
+                                <table>
+                                    <tr class="mt-5">
+                                        <td>{{category.name_ar}}</td>
+                                            <td>CAL</td>
+                                            <td>SR</td>
+                                        <td>{{category.name_en}}</td>
+                                    </tr>
+                                    {% for item in category.categoryItem.all %}
+                                        <tr>
+                                            <td>{{item.name_ar}}</td>
+                                            <td>{{item.CAL}}</td>
+                                            <td>{{item.SR}}</td>
+                                            <td>{{item.name_en}}</td>
+                                        </tr>
+                                    {% endfor %}
+
+                                </table>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end menu section -->
+                        <!-- anmation -->
+                <script>
+                  AOS.init();
+                </script>
+        </body>
+    </html>
+
+  
+{% endblock body %}

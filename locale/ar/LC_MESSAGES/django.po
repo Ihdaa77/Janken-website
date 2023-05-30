@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-27 00:54+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\company\models.py:11
+msgid "Name"
+msgstr "الاسم"
+
+#: .\company\models.py:12
+msgid "Sub titl"
+msgstr "الاسم الفرعي"
+
+#: .\company\models.py:13 .\company\models.py:14
+msgid "Description"
+msgstr "الوصف"
+
+#: .\company\models.py:15
+msgid "Address"
+msgstr "العنوان"
+
+#: .\company\models.py:16 .\company\models.py:29
+msgid "Phone"
+msgstr "رقم الهاتف"
+
+#: .\company\models.py:17
+msgid "Email"
+msgstr "البريد الالكتروني"
+
+#: .\company\models.py:18
+msgid "Logo"
+msgstr "الشعار"
+
+#: .\company\models.py:19
+msgid "location"
+msgstr "الموقع"
+
+#: .\company\models.py:20
+msgid "facebook link"
+msgstr "رابط فيسبوك"
+
+#: .\company\models.py:21
+msgid "instagram link"
+msgstr "رابط انستجرام"
+
+#: .\company\models.py:22
+msgid "tweeter link"
+msgstr "رابط تويتر"
+
+#: .\company\models.py:28
+msgid "user"
+msgstr "مستخدم"
+
+#: .\company\models.py:39
+msgid "Image"
+msgstr "الصورة"
+
+#: .\company\templates\information\home.html:38 .\templates\base.html:38
+msgid "About"
+msgstr "من نحن"
+
+#: .\company\templates\information\home.html:38
+#: .\company\templates\information\home.html:42
+msgid "Janken"
+msgstr "جانكن"
+
+#: .\company\templates\information\home.html:45
+msgid ""
+"\n"
+"                 <b>تقودها الثقافة</b> تجربة\n"
+"                "
+msgstr ""
+
+#: .\company\templates\registration\login.html:9 .\templates\base.html:76
+msgid "Log In"
+msgstr "تسجيل دخول"
+
+#: .\company\templates\registration\login.html:16
+#: .\company\templates\registration\signup.html:18
+msgid "Enter your user name"
+msgstr "ادخل اسم المستخدم"
+
+#: .\company\templates\registration\login.html:18
+#: .\company\templates\registration\signup.html:27
+msgid "Enter your password"
+msgstr "ادخل كلمة المرور"
+
+#: .\company\templates\registration\login.html:22
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: .\company\templates\registration\signup.html:12
+#: .\company\templates\registration\signup.html:37 .\templates\base.html:73
+msgid "Sign Up"
+msgstr "إنشاء حساب"
+
+#: .\company\templates\registration\signup.html:23
+msgid "Enter your phone number"
+msgstr "ادخل رقم الهاتف"
+
+#: .\company\templates\registration\signup.html:25
+msgid "Enter your city"
+msgstr "ادخل مدينتك"
+
+#: .\company\templates\registration\signup.html:32
+msgid "Confirm your password"
+msgstr "تاكيد كلمة المرور"
+
+#: .\menu\models.py:8 .\menu\models.py:20
+msgid "Arabic Name"
+msgstr "العربية"
+
+#: .\menu\models.py:9 .\menu\models.py:21
+msgid "English Name"
+msgstr "الانجليزية"
+
+#: .\menu\models.py:11
+msgid "SR"
+msgstr ""
+
+#: .\menu\models.py:12
+msgid "CAL"
+msgstr ""
+
+#: .\project\settings.py:133
+msgid "Arabic"
+msgstr "العربية"
+
+#: .\project\settings.py:134
+msgid "English"
+msgstr "الانجليزية"
+
+#: .\templates\base.html:35
+msgid "Home"
+msgstr "الرئيسية"
+
+#: .\templates\base.html:41
+msgid "Menu"
+msgstr "قائمة الاصناف"
+
+#: .\templates\base.html:44
+msgid "Contact"
+msgstr "اتصل بنا"
+
+#: .\templates\base.html:47
+msgid "Album"
+msgstr "المعرض"
+
+#: .\templates\base.html:69
+msgid "Logout"
+msgstr "تسجيل خروج"
+
+#: .\templates\base.html:102
+msgid "menu"
+msgstr "قائمة الاصناف"
+
+#: .\templates\base.html:105
+msgid "log in"
+msgstr "تسجيل دخول"
+
+#~ msgid "Size"
+#~ msgstr "الحجم"
+
+#~ msgid "Price"
+#~ msgstr "السعر"

@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>About us</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+      <!-- Bootstrap css1 -->
+            <!-- animation -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body{
+      background-color: rgba(153,155,138,0.3);
+       }
+      .card {
+      width: 290px;
+      height: 354px;
+      border-radius: 20px;
+      padding: 5px;
+      box-shadow: rgba(114,77,81, 0.2) 0 15px 30px -5px;
+      background-image: linear-gradient(144deg,#eb8b69, #724d51 50%);
+    }
+
+    .card__content {
+      background: #000;
+      border-radius: 17px;
+      width: 100%;
+      height: 100%;
+    }
+    .card__title{
+        text-align: center;
+        padding: 3px;
+        color: #fff;
+    }
+    .card__p{
+        text-align: center;
+        padding: 3px;
+        color: #fff;
+    }
+    .card__icon{
+    margin-left: 30%;
+    width: 104px;
+    height: 104px;
+    padding: 5px
+    }
+    .card__img{
+    width: 90%;
+    height: 90%;
+    border-top-right-radius: 20%;
+    }
+    .card__2 {
+      width: 17em;
+      height: 22.5em;
+      background: #999b8a;
+      transition: 1s ease-in-out;
+      clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-left:30%
+    }
+    .card__2 span {
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      display: block;
+      font-size: 16px;
+    }
+    .card__2 .info {
+      font-weight: 400;
+      color: white;
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      margin: 1em;
+    }
+    .p-d{
+      font-weight: 600;
+      color: #686868;
+      text-align:justify ;
+      font-size: 16px;
+      margin: 1em;
+      line-height: 32px;
+    }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <main>
+      <div class="container marketing">
+        <!-- start about section -->
+        <section data-aos="fade-down">
+          <div class="row featurette mt-5">
+              <div class="col-md-7 mt-5">
+                <h2 class="featurette-heading" style="color: #724d51">You Need to Hear it From Us?
+                    <br>
+                    <span style="color:rgba(153,155,138,1)"> Ok..</span>
+                </h2>
+                <p class="p-d">
+                    We are a Saudi Brand inspired by the heritage and lifestyle of the Japanese Culture, we provide an entertainment and social space to our clients,
+                    with the highest quality drinks and treats, and continuous surprises on the shelves! joy is our native language,
+                    and culture is the medium in which we communicate and deliver our ideas through. We are minimalists,
+                    we help our clients in feeling less stressful and more joyful, we are also detail-oriented, we never miss a detail, but don’t worry,
+                    it doesn’t mean that we’ll stalk you, but we’ll be able to recognize your laugh, distinguish your smile, and feel the joy in your heart if you walked through our doors,
+                    we are consistent in what we deliver to our clients, as consistency is a way to build a long-term connection with our communities, and communities are the essence of our work,
+                    they are why we are here from the first place!
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img class="card__img mt-5" src="{% static 'images/03.png' %}" alt="icon" />
+              </div>
+          </div>
+        </section>
+          <!-- end about section -->
+          <!-- start values section -->
+          <section data-aos="fade-down" class="mt-5">
+            <h1 class="text-center" style="color: #724d51">
+                What Values Influences Us ?
+            </h1>
+            <div class="row mb-5 mt-3">
+              <div class="col-md-3">
+                  <div class="card">
+                    <div class="card__content">
+                         <img class="card__icon mt-5" src="{% static 'images/sustainability.png' %}" alt="icon" />
+                        <h4 class="card__title">Sustainability</h4>
+                        <p class="card__p">
+                            We choose environment-friendly
+                            products, and we sustain a long-term
+                            relationships with our customers.
+                        </p>
+                    </div>
+                  </div>
+              </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card__content">
+                         <img class="card__icon mt-5" src="{% static 'images/culture.png' %}" alt="icon" />
+                        <h4 class="card__title">Culture</h4>
+                        <p class="card__p">
+                            We offer a multi-cultural experience that can change the way people
+                            perceive life and view the world around them.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card__content">
+                         <img class="card__icon mt-5" src="{% static 'images/Connection.png' %}" alt="icon" />
+                        <h4 class="card__title">Connection</h4>
+                        <p class="card__p">
+                            We make people connect with themselves and their surroundings by
+                            connecting with others. We call it the bonding experiment.
+                        </p>
+                    </div>
+                  </div>
+              </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card__content">
+                         <img class="card__icon mt-5" src="{% static 'images/Value.png' %}" alt="icon" />
+                        <h4 class="card__title">Value Added</h4>
+                        <p class="card__p">
+                            We care about the messages being communicated and values
+                            being delivered within our services and our through our products
+                            for all involved parties.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+          <!-- end values section -->
+          <!-- start about2 section -->
+          <section data-aos="fade-down" class="mt-5">
+              <div class="row featurette mt-5">
+                  <div class="col-md-7 order-md-2 mt-5">
+                    <h2 class="featurette-heading" style="color: #724d51">What Do We Exactly Provide in Janken?</h2>
+                    <p class="p-d">In simple words, we provide you an entertainment and
+                        social space where you can disconnect from the digital world and connect to the real world through playing and engaging with your
+                        surroundings, and we provide you with a unique selections of food and beverages that can make you engage in the moment with your five senses.
+                        Disconnecting from the virtual lives and engaging in a real social experiment can make a difference, and the secret is in the “endorphins hormones “, which is “our favorite hormone”! It releases all the stress and activates parts in the brain where you can feel your creative self again, and become more joyful,
+                        if you really engaged in the moment.</p>
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img class="card__img mt-5" src="{% static 'images/10.png' %}" alt="icon" />
+                  </div>
+                </div>
+          </section>
+          <!-- end about2 section -->
+          <!-- start about3 section -->
+          <section data-aos="fade-down" class="mt-5">
+            <div class="row featurette mt-5">
+              <div class="col-md-7">
+                    <h2 class="featurette-heading" style="color: #724d51">What Do We Work on Everyday? </h2>
+                    <p class="p-d">
+                        We are dreamers, creators, and innovators. We want to leave an impact on the society and make a change, it might sound cliche, but it is real.
+                        Our spaces can be utilized in various of ways, and our shelves are always waiting for something new, we welcome you inside Janken at all times,
+                        and we come to you with all the passion we have within us, to fill your clients with it too.
+                        And we can’t define ourselves just yet.. as we are shaping ourselves as the days go by. We believe that our journey will take us where we want to go,
+                        so how about you share this journey with us?
+                    </p>
+              </div>
+              <div class="col-md-5">
+                  <img class="card__img mt-5" src="{% static 'images/01.png' %}" alt="icon" />
+            </div>
+        </div>
+          </section>
+          <!-- end about3 section -->
+          <!-- start about4 section -->
+          <section data-aos="fade-down" class="mt-5">
+              <h2 class="featurette-heading text-center" style="color: #724d51">What Are Our Two Main Lines of Service?</h2>
+              <div class="row mt-5 mb-5">
+                  <div class="col-sm-6">
+                       <div class="card__2">
+                            <div>
+                                <img class="card__icon mt-5" src="{% static 'images/board-game.png' %}" alt="icon" />
+                            </div>
+                             <span>Entertainment — The Joy Line</span>
+                              <p class="info">
+                                  Let’s start with definitions, to entertain is to make people feel a certain amount of emotions.
+                                  In our shelves, there are variety of board games, card games,
+                                  and kinetic games that will make you feel yourself once again.
+                              </p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                       <div class="card__2">
+                            <div>
+                                <img class="card__icon mt-5" src="{% static 'images/drinks.png' %}" alt="icon" />
+                            </div>
+                             <span>Food and Beverage — The Excitement Line</span>
+                              <p class="info">
+                                  To be excited is to not know what to expect, we all like the
+                                  anticipation of what’s going to be serve.
+                                  In our bar, there are variety of snacks and beverages options, even for
+                                  non-coffee lovers; that’ll make you always excited for more.
+                              </p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- end about4 section -->
+      </div>
+    </main>
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+                <script>
+                  AOS.init();
+                </script>
+  </body>
+</html>
+{% endblock body %}

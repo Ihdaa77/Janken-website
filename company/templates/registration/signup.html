@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block body %}
+
+ <!-- start signup section -->
+ <section class="signup">
+    <div>
+        <br>
+        <br>
+        <h1 class="text-center">{% translate "Sign Up" %}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {% if form.non_field_errors %}
+                <div class="error-message">{{ form.non_field_errors }}</div>
+            {% endif %}
+            <input type="text" name="username" placeholder="{% translate "Enter your user name" %}">
+            {% if form.username.errors %}
+                <div class="error-message">{{ form.username.errors }}</div>
+            {% endif %}
+            <br>
+            <input type="text" name="phonenumber" placeholder="{% translate "Enter your phone number" %}">
+            <br>
+            <input type="text" name="city" placeholder="{% translate "Enter your city" %}">
+            <br>
+            <input type="password" name="password1" placeholder="{% translate "Enter your password" %}">
+            <br>
+            {% if form.password1.errors %}
+            <div class="error-message">{{ form.password1.errors }}</div>
+            {% endif %}
+            <input type="password" name="password2" placeholder="{% translate "Confirm your password" %}">
+            <br>
+            {% if form.password2.errors %}
+                <div class="error-message">{{ form.password2.errors }}</div>
+            {% endif %}
+            <input type="submit" class="submit" value="{% translate "Sign Up" %}">
+        </form> 
+    </div>
+</section>
+<!-- end signup section -->
+
+        <!--=====================================
+                    USER FORM PART START
+        =======================================-->
+        {% endblock body %}

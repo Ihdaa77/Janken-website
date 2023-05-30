@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block body %}
+ <!-- start signup section -->
+ <section class="signup">
+  <div>
+      <h1 class="text-center">{% translate "Log In" %}</h1>
+      <form  method="post">
+        {% csrf_token %}
+        
+        {% if form.non_field_errors %}
+          <div class="error-message">{{ form.non_field_errors }}</div>
+        {% endif %}
+        <input type="text" name="username" placeholder="{% translate "Enter your user name" %}">
+        <br>
+        <input type="password" name="password" placeholder="{% translate "Enter your password" %}">
+        <br>
+        <br>
+        
+        <input type="submit" class="submit" value="{% translate "Login" %}">
+      </form> 
+  </div>
+</section>
+<!-- end signup section -->
+
+        
+
+
+{% endblock body %}
+  
